@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BnsHomeActivity" >
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:background="@drawable/home_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+    <Button android:id="@+id/home_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_btn"
+            android:onClick="onButtonClick"
+            android:layout_above="@+id/home_info_btn" android:layout_alignParentRight="true"
+            android:layout_marginBottom="48dp"/>
+    <Button android:id="@+id/home_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:onClick="onButtonClick"
+            android:layout_marginBottom="53dp"
+            android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>
